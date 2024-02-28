@@ -37,6 +37,12 @@ if __name__ == "__main__":
             print("{} {}".format(i, sys.argv[i]))
 
         print("")
+    
+    def sumargs():
+        """The funtions prints the sum of all arguments"""
+        lstargs = [int(arg) for arg in sys.argv[1:]]
+        print("The sum of the command line arguments is: ", sum(lstargs))
 
     noargs()
     printargs()
+    sumargs()
