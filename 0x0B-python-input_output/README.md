@@ -1,4 +1,25 @@
-			PYTHON - INPUT/OUTPUT
+Python - Input/Output
+Python
+ By: Guillaume
+ Weight: 1
+ Project over - took place from Nov 7, 2023 6:00 AM to Nov 8, 2023 6:00 AM
+ An auto review will be launched at the deadline
+In a nutshell…
+Auto QA review: 140.0/140 mandatory & 10.0/21 optional
+Altogether:  147.62%
+Mandatory: 100.0%
+Optional: 47.62%
+Calculation:  100.0% + (100.0% * 47.62%)  == 147.62%
+Resources
+Read or watch:
+
+7.2. Reading and Writing Files (https://intranet.alxswe.com/rltoken/hFlrZ9E1XROVWcjwwyF52A)
+8.7. Predefined Clean-up Actions (https://intranet.alxswe.com/rltoken/0OZ9fzPRjmKWZsID9IRJSg)
+Dive Into Python 3: Chapter 11. Files (until “11.4 Binary Files” (included)) (https://intranet.alxswe.com/rltoken/0osPfNU5d3Shh9PFWgYm9A)
+JSON encoder and decoder (https://intranet.alxswe.com/rltoken/l0B9_pFn1tgBvE7FrT14Zw)
+Learn to Program 8 : Reading / Writing Files (https://intranet.alxswe.com/rltoken/ZvtAdnUzjnEVu1sjg3m_tQ)
+Automate the Boring Stuff with Python (ch. 8 p 180-183 and ch. 14 p 326-333) (https://intranet.alxswe.com/rltoken/Ej8YjhxLXpzHW7_rNMd9XQ)
+All about py-file I/O (https://intranet.alxswe.com/rltoken/TUatlpPV27S4zPogmQIPnQ)
 
 
 Learning Objectives
@@ -18,8 +39,11 @@ What is serialization
 What is deserialization
 How to convert a Python data structure to a JSON string
 How to convert a JSON string to a Python data structure
-
-
+Copyright - Plagiarism
+You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+You are not allowed to publish any content of this project.
+Any form of plagiarism is strictly forbidden and will result in removal from the program.
 Requirements
 Python Scripts
 Allowed editors: vi, vim, emacs
@@ -39,19 +63,17 @@ All your tests should be executed by using this command: python3 -m doctest ./te
 All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
 All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
 All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
-A documentation is not a simple word, its a real sentence explaining whats the purpose of the module, class or method (the length of it will be verified)
-We strongly encourage you to work together on test cases, so that you dont miss any edge case
-
-
-			TASKS
-
+A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+We strongly encourage you to work together on test cases, so that you don’t miss any edge case
+Tasks
 0. Read file
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that reads a text file (UTF8) and prints it to stdout:
 
 Prototype: def read_file(filename=""):
 You must use the with statement
-You dont need to manage file permission or file doesn't exist exceptions.
+You don’t need to manage file permission or file doesn't exist exceptions.
 You are not allowed to import any module
 guillaume@ubuntu:~/0x0B$ cat 0-main.py
 #!/usr/bin/python3
@@ -77,15 +99,16 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 0-read_file.py
-   
+    
 1. Write to a file
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that writes a string to a text file (UTF8) and returns the number of characters written:
 
 Prototype: def write_file(filename="", text=""):
 You must use the with statement
-You dont need to manage file permission exceptions.
-Your function should create the file if doesnt exist.
+You don’t need to manage file permission exceptions.
+Your function should create the file if doesn’t exist.
 Your function should overwrite the content of the file if it already exists.
 You are not allowed to import any module
 guillaume@ubuntu:~/0x0B$ cat 1-main.py
@@ -107,15 +130,16 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 1-write_file.py
-   
+    
 2. Append to a file
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that appends a string at the end of a text file (UTF8) and returns the number of characters added:
 
 Prototype: def append_write(filename="", text=""):
-If the file doesnt exist, it should be created
+If the file doesn’t exist, it should be created
 You must use the with statement
-You dont need to manage file permission or file doesn't exist exceptions.
+You don’t need to manage file permission or file doesn't exist exceptions.
 You are not allowed to import any module
 guillaume@ubuntu:~/0x0B$ cat 2-main.py
 #!/usr/bin/python3
@@ -143,13 +167,14 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 2-append_write.py
-   
+    
 3. To JSON string
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that returns the JSON representation of an object (string):
 
 Prototype: def to_json_string(my_obj):
-You dont need to manage exceptions if the object cant be serialized.
+You don’t need to manage exceptions if the object can’t be serialized.
 guillaume@ubuntu:~/0x0B$ cat 3-main.py
 #!/usr/bin/python3
 to_json_string = __import__('3-to_json_string').to_json_string
@@ -195,13 +220,14 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 3-to_json_string.py
-   
+    
 4. From JSON string to Object
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that returns an object (Python data structure) represented by a JSON string:
 
 Prototype: def from_json_string(my_str):
-You dont need to manage exceptions if the JSON string doesnt represent an object.
+You don’t need to manage exceptions if the JSON string doesn’t represent an object.
 guillaume@ubuntu:~/0x0B$ cat 4-main.py
 #!/usr/bin/python3
 from_json_string = __import__('4-from_json_string').from_json_string
@@ -243,15 +269,16 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 4-from_json_string.py
-   
+    
 5. Save Object to a file
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that writes an Object to a text file, using a JSON representation:
 
 Prototype: def save_to_json_file(my_obj, filename):
 You must use the with statement
-You dont need to manage exceptions if the object cant be serialized.
-You dont need to manage file permission exceptions.
+You don’t need to manage exceptions if the object can’t be serialized.
+You don’t need to manage file permission exceptions.
 guillaume@ubuntu:~/0x0B$ cat 5-main.py
 #!/usr/bin/python3
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
@@ -296,15 +323,16 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 5-save_to_json_file.py
-   
+    
 6. Create object from a JSON file
 mandatory
-Write a function that creates an Object from a JSON file:
+Score: 100.0% (Checks completed: 100.0%)
+Write a function that creates an Object from a “JSON file”:
 
 Prototype: def load_from_json_file(filename):
 You must use the with statement
-You dont need to manage exceptions if the JSON string doesnt represent an object.
-You dont need to manage file permissions / exceptions.
+You don’t need to manage exceptions if the JSON string doesn’t represent an object.
+You don’t need to manage file permissions / exceptions.
 guillaume@ubuntu:~/0x0B$ cat my_fake.json
 {"is_active": true, 12 }
 guillaume@ubuntu:~/0x0B$ cat 6-main.py
@@ -358,16 +386,17 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 6-load_from_json_file.py
-   
+    
 7. Load, add, save
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a script that adds all arguments to a Python list, and then save them to a file:
 
 You must use your function save_to_json_file from 5-save_to_json_file.py
 You must use your function load_from_json_file from 6-load_from_json_file.py
 The list must be saved as a JSON representation in a file named add_item.json
-If the file doesnt exist, it should be created
-You dont need to manage file permissions / exceptions.
+If the file doesn’t exist, it should be created
+You don’t need to manage file permissions / exceptions.
 guillaume@ubuntu:~/0x0B$ cat add_item.json
 cat: add_item.json: No such file or directory
 guillaume@ubuntu:~/0x0B$ ./7-add_item.py
@@ -387,9 +416,10 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 7-add_item.py
-   
+    
 8. Class to JSON
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object:
 
 Prototype: def class_to_json(obj):
@@ -484,9 +514,10 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 8-class_to_json.py
-   
+    
 9. Student to JSON
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a class Student that defines a student by:
 
 Public instance attributes:
@@ -529,9 +560,10 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 9-student.py
-   
+    
 10. Student to JSON with filter
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a class Student that defines a student by: (based on 9-student.py)
 
 Public instance attributes:
@@ -570,9 +602,10 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 10-student.py
-   
+    
 11. Student to disk and reload
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Write a class Student that defines a student by: (based on 10-student.py)
 
 Public instance attributes:
@@ -660,14 +693,15 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 11-student.py
-   
+    
 12. Pascal's Triangle
 mandatory
+Score: 100.0% (Checks completed: 100.0%)
 Technical interview preparation:
 
 You are not allowed to google anything
 Whiteboard first
-Create a function def pascal_triangle(n): that returns a list of lists of integers representing the Pascals triangle of n:
+Create a function def pascal_triangle(n): that returns a list of lists of integers representing the Pascal’s triangle of n:
 
 Returns an empty list if n <= 0
 You can assume n will be always an integer
@@ -703,14 +737,15 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 12-pascal_triangle.py
-   
+    
 13. Search and update
 #advanced
+Score: 100.0% (Checks completed: 100.0%)
 Write a function that inserts a line of text to a file, after each line containing a specific string (see example):
 
 Prototype: def append_after(filename="", search_string="", new_string=""):
 You must use the with statement
-You dont need to manage file permission or file doesn't exist exceptions.
+You don’t need to manage file permission or file doesn't exist exceptions.
 You are not allowed to import any module
 guillaume@ubuntu:~/0x0B$ cat 100-main.py
 #!/usr/bin/python3
@@ -752,9 +787,10 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 100-append_after.py
-   
+    
 14. Log parsing
 #advanced
+Score: 0.0% (Checks completed: 0.0%)
 Write a script that reads stdin line by line and computes metrics:
 
 Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>
@@ -763,7 +799,7 @@ Total file size: File size: <total size>
 where is the sum of all previous (see input format above)
 Number of lines by status code:
 possible status code: 200, 301, 400, 401, 403, 404, 405 and 500
-if a status code doesnt appear, dont print anything for this status code
+if a status code doesn’t appear, don’t print anything for this status code
 format: <status code>: <number>
 status codes should be printed in ascending order
 guillaume@ubuntu:~/0x0B$ cat 101-generator.py
@@ -834,3 +870,4 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x0B-python-input_output
 File: 101-stats.py
+   
