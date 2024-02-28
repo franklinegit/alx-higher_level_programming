@@ -1,0 +1,18 @@
+#!/bin/bash
+: '
+The script is meant to run a python script stored in an envinroment variable
+the script first checks if the env variable is set
+It then checks if the file with the python script exists.
+'
+
+if [ -z "$PYFILE" ]; then
+    echo "The environment variable PYFILE is not set"
+    exit 1
+fi
+
+if [ ! -f "$PYFILE" ]; then
+    echo "The file PYFILE doesn't exist"
+    exit 1
+fi
+
+python3 "$PYFILE"
