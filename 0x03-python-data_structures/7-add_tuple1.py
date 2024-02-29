@@ -14,6 +14,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     tuple_list = (tuple_a, tuple_b)
     for my_tuple in tuple_list:
         if all(isinstance(element, int) for element in my_tuple):
+            # checks if all the elements are integers using the isinstance() and all functions()
             if len(tuple_a) == 0:
                 tuple_a = (0, 0)
             if len(tuple_a) == 1:
