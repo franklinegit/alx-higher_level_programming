@@ -22,8 +22,9 @@ Learn to Program
 Learn to Program 2 : Looping
 Pycodestyle – Style Guide for Python Code
 man or help:
-
 python3
+
+
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -44,6 +45,7 @@ What does return a function that does not use any return statement
 Scope of variables
 What’s a traceback
 What are the arithmetic operators and how to use them
+
 Copyright - Plagiarism
 You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
 You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
@@ -52,6 +54,7 @@ Any form of plagiarism is strictly forbidden and will result in removal from the
 
 
 Requirements
+
 Python Scripts
 Allowed editors: vi, vim, emacs
 All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
@@ -74,6 +77,8 @@ In the following examples, the main.c files are shown as examples. You can use t
 The prototypes of all your functions should be included in your header file called lists.h
 Don’t forget to push your header file
 All your header files should be include guarded
+
+
 More Info
 Note: you do not need to understand lists yet.
 
