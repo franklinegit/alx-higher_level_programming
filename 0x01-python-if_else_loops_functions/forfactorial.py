@@ -62,9 +62,8 @@ while True:
             menu[choice]()
             break
         else:
-        	print("Invalid choice. Please choose between '1' and '2'.")
-	else:
-        print("Invalid input. Please enter a valid number")
+            print("Invalid choice. Please choose between '1' and '2'")
+            print("")
+    else:
+        print("Invalid input. Please enter a positive integer.")
         print("")
-    
-        
