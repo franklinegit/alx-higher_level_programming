@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+
 """
 0-square
 
 A module for a square
 """
+
 
 class Square:
     """
